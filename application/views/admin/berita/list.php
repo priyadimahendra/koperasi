@@ -30,7 +30,7 @@ if($this->session->flashdata('sukses'))
     <?php $i=1; foreach($berita as $berita) { ?>
      <tr class="odd gradeX">
          <td><?php echo $i ?></td>
-         <td><img src="<?php echo base_url('assets/koperasi/images/'.$berita->gambar) ?>" width="60"></td>
+         <td><img src="<?php echo base_url('assets/koperasi/images/'.$berita->gambar) ?>" width="60" class="img img-thumbnail"></td>
          <td><?php echo $berita->judul_berita ?></td>
          <td class="center"><?php echo $berita->nama ?></td>
          <td class="center"><?php echo $berita->tanggal_post ?></td>
