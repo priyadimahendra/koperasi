@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Mar 2019 pada 08.02
+-- Waktu pembuatan: 01 Mar 2019 pada 10.06
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.3.0
 
@@ -65,6 +65,32 @@ CREATE TABLE `konfigurasi` (
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `pendaftar`
+--
+
+CREATE TABLE `pendaftar` (
+  `id_pendaftar` int(11) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `tempat_lahir` varchar(32) NOT NULL,
+  `tanggal_lahir` int(5) NOT NULL,
+  `bulan_lahir` varchar(15) NOT NULL,
+  `tahun_lahir` int(5) NOT NULL,
+  `no_ktp` int(100) NOT NULL,
+  `alamat` varchar(255) NOT NULL,
+  `kelurahan_desa` varchar(255) NOT NULL,
+  `kecamatan` varchar(255) NOT NULL,
+  `kabupaten_kota` varchar(255) NOT NULL,
+  `pekerjaan` varchar(255) NOT NULL,
+  `pendidikan_terakhir` varchar(255) NOT NULL,
+  `no_hp` int(50) NOT NULL,
+  `no_wa` int(50) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `tanggal` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `user`
 --
 
@@ -100,6 +126,12 @@ ALTER TABLE `konfigurasi`
   ADD PRIMARY KEY (`id_konfigurasi`);
 
 --
+-- Indeks untuk tabel `pendaftar`
+--
+ALTER TABLE `pendaftar`
+  ADD PRIMARY KEY (`id_pendaftar`);
+
+--
 -- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
@@ -121,6 +153,12 @@ ALTER TABLE `berita`
 --
 ALTER TABLE `konfigurasi`
   MODIFY `id_konfigurasi` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `pendaftar`
+--
+ALTER TABLE `pendaftar`
+  MODIFY `id_pendaftar` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
