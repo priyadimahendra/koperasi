@@ -12,10 +12,10 @@
      <a href="#"><i class="fa fa"></i> Pendaftar<span class="fa arrow"></span></a>
      <ul class="nav nav-second-level">
          <li>
-             <a href="<?php echo base_url('admin/user') ?>">Data Pendaftar</a>
+             <a href="<?php echo base_url('admin/pendaftar') ?>">Data Pendaftar</a>
          </li>
          <li>
-             <a href="<?php echo base_url('admin/user') ?>">Tambah Pendatar</a>
+             <a href="<?php echo base_url('admin/pendaftar/tambah') ?>">Tambah Pendatar</a>
          </li>
      </ul>
  </li>
