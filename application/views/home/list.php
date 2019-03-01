@@ -274,7 +274,7 @@
 
               <!-- Slide -->
               <div class="owl-item dept_item">
-                <div class="dept_image"><img src="<?php echo base_url() ?>assets/koperasi/images/roza.jpg" alt=""></div>
+                <div class="dept_image"><img src="<?php echo base_url() ?>assets/koperasi/images/roza2.jpg" alt=""></div>
                 <div class="dept_content">
                   <div class="dept_title">Roza</div>
                   <div class="dept_link"><a href="#">Read More</a></div>
