@@ -12,6 +12,9 @@
 padding: 15px 50px 5px 50px;
 float: right;
 font-size: 16px;"> <?php echo date('d M Y') ?> &nbsp;
-<a href="<?php echo base_url('login/logout') ?>" class="btn btn-danger square-btn-adjust"><i class="fa fa-sign-out"></i>Logout</a> </div>
+<a class="btn btn-success square-btn-adjust"><i class="fa fa-user"></i>User</a>
+<a href="<?php echo base_url() ?>" class="btn btn-primary square-btn-adjust" target="_blank"><i class="fa fa-home"></i>Homepage</a> 
+<a href="<?php echo base_url('login/logout') ?>" class="btn btn-danger square-btn-adjust"><i class="fa fa-sign-out"></i>Logout</a>
+</div>
         </nav>
            <!-- /. NAV TOP  -->
