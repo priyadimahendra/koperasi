@@ -1,9 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class User_model extends CI_Model{
-
-  public function __construct(){
+class User_model extends CI_Model
+{
+  //load database
+  public function __contruct(){
     parent::__construct();
     $this->load->database();
   }
@@ -13,8 +14,8 @@ class User_model extends CI_Model{
     $this->db->select('*');
     $this->db->from('user');
     $this->db->where(array( 'username'   =>    $username,
-                            'password'   =>    md5($password)));
-    $this->db->order_by('id_user','DESC');
+                            'password'   =>    sha1($password)));
+    $this->db->order_by('id_user');
     $query = $this->db->get();
     return $query->row();
   }
