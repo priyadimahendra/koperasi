@@ -48,18 +48,16 @@ if($this->session->flashdata('sukses')){
  ?>
 
 
-                                <form role="form" method="post" action="<?php echo base_url('login')?>">
-                                       <br />
+                                <form role="form" method="post">
+                                      <br />
                                      <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
                                             <input type="text" class="form-control" placeholder="Your Username " name="username"/>
                                         </div>
-                                                                              <div class="form-group input-group">
+                                        <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
                                             <input type="password" class="form-control"  placeholder="Your Password" name="password"/>
                                         </div>
-                                    <div class="form-group">
-                                    </div>
 
                                     <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Login Now">
                                     <hr />
