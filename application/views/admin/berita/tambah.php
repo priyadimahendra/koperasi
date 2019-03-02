@@ -10,8 +10,8 @@ if(isset($error_upload))
 
 //Atribut
 $attribut = 'class = "alert alert-info"';
-// Form Open
-echo form_open(base_url('admin/berita/tambah'));
+// Form Open Khusus bila diform ada uploda gambar
+echo form_open_multipart(base_url('admin/berita/tambah'));
  ?>
 
 <div class="col-md-8">
