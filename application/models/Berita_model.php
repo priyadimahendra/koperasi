@@ -19,4 +19,10 @@ class Berita_model extends CI_Model
     return $query->result();
   }
 
+  // Tambah/Insert data
+  public function tambah($data)
+  {
+    $this->db->insert('berita',$data);
+  }
+
 }
