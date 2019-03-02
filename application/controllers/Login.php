@@ -20,30 +20,37 @@ class Login extends CI_Controller {
 			$valid->set_rules('password','Password','required',
 							array('required'		=>		'Password harus diisi'));
 
-
-			if($valid->run()===FALSE){
+			if($valid->run()===FALSE)
+			{
 				$data = array( 'title' => 'Login Administrator');
 				$this->load->view('admin/login_view', $data, FALSE);
-			}else{	$username				=		$this->input->post('username');
-				$password				=		$this->input->post('password');
-				$check_login		=		$this->user_model->login($username , $password);
+			}else {
+					$i						=		$this->input;
+					$username			=		$i->post('username');
+					$password			=		$i->post('password');
 
-				if(count($check_login) == 1){
-					$this->session->set_userdata('username',$username);
-					$this->session->set_userdata('password',$password);
-					$this->session->set_flashdata('sukses', 'Anda berhasil login');
-					redirect(base_url('admin/dasbor'),'refresh');
-				}else {
-					$this->session->set_flashdata('sukses', 'Username atau password tidak cocok');
-					redirect(base_url('login'),'refresh');
-				}
-      }
+					// Check di database
+					$check_login		=		$this->user_model->login($username , $password);
+
+					if(count($check_login) == 1)
+					{
+						$this->session->set_userdata('id_user', $check_login->$id_user);
+						$this->session->set_userdata('username',$username);
+						$this->session->set_userdata('password',$password);
+						$this->session->set_flashdata('sukses', 'Anda berhasil login');
+						redirect(base_url('admin/dasbor'),'refresh');
+					}else {
+						$this->session->set_flashdata('sukses', 'Username atau password tidak cocok');
+						redirect(base_url('Login'),'refresh');
+					}
+			}
 	}
 
 	public function logout() {
+		$this->session->set_userdata('id_user');
 		$this->session->unset_userdata('username');
 		$this->session->unset_userdata('password');
-		$this->session->set_flashdata('sukses', 'Anda brasil logout');
-		redirect(base_url('login'));
+		$this->session->set_flashdata('sukses', 'Anda berhasil logout');
+		redirect(base_url('Login'));
 	}
 }
