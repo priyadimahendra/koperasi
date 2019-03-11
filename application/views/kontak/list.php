@@ -30,6 +30,7 @@
           <div class="row">
             <div class="col">
               <div class="header_top_content d-flex flex-row align-items-center justify-content-start">
+                <img src="<?php echo base_url() ?>assets/koperasi/images/Umat8.jpg" href="<?php echo base_url() ?>">
                 <div class="logo">
                   <a href="<?php echo base_url() ?>">Halal Ummat<span>*</span></a>
                 </div>
@@ -53,6 +54,7 @@
                         <li><a href="<?php echo base_url('tentang_kami') ?>">Tentang Kami</a></li>
                         <li><a href="<?php echo base_url('berita') ?>">Berita</a></li>
                         <li class="active"><a href="<?php echo base_url('kontak') ?>">Kontak</a></li>
+                        <li><a href="<?php echo base_url('daftar') ?>">Daftar</a></li>
                       </ul>
                     </nav>
                     <div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
@@ -94,7 +96,7 @@
       <!-- Contact form -->
       <div class="col-lg-8 contact_col">
         <div class="contact_form">
-          <div class="contact_title">Get in touch</div>
+          <div class="contact_title">Kontak</div>
           <div class="contact_form_container">
             <form action="#" id="contact_form" class="contact_form">
               <input type="text" id="contact_input" class="contact_input" placeholder="Namamu" required="required">
@@ -164,7 +166,7 @@
   <!-- Footer -->
 
   	<footer class="footer">
-  		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>assets/koperasi/images/footer.jpg" data-speed="0.8"></div>
+  		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>assets/koperasi/images/Grey.jpg" data-speed="0.8"></div>
   		<div class="footer_content">
   			<div class="container">
   				<div class="row">
@@ -191,21 +193,7 @@
   					</div>
 
   					<!-- Footer Contact -->
-  					<div class="col-lg-5 footer_col">
-  						<div class="footer_contact">
-  							<div class="footer_contact_title">Kontak Cepat</div>
-  							<div class="footer_contact_form_container">
-  								<form action="#" class="footer_contact_form" id="footer_contact_form">
-  									<div class="d-flex flex-xl-row flex-column align-items-center justify-content-between">
-  										<input type="text" class="footer_contact_input" placeholder="Nama" required="required">
-  										<input type="email" class="footer_contact_input" placeholder="E-mail" required="required">
-  									</div>
-  									<textarea class="footer_contact_input footer_contact_textarea" placeholder="Pesan" required="required"></textarea>
-  									<button class="footer_contact_button">kirim pesan</button>
-  								</form>
-  							</div>
-  						</div>
-  					</div>
+  					<div class="col-lg-5 footer_col"></div>
 
   					<!-- Footer Hours -->
   					<div class="col-lg-4 footer_col">
