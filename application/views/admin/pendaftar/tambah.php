@@ -71,7 +71,7 @@ echo form_open(base_url('admin/pendaftar/tambah'));
 <div class="col-md-4">
   <div class="form-group">
       <label>Bulan Lahir</label>
-      <select name="tanggal_lahir" class="form-control">
+      <select name="bulan_lahir" class="form-control">
         <option value=""></option>
         <option value="Januari">Januari</option>
         <option value="Februari">Februari</option>
