@@ -33,6 +33,7 @@
           <div class="row">
             <div class="col">
               <div class="header_top_content d-flex flex-row align-items-center justify-content-start">
+                <img src="<?php echo base_url() ?>assets/koperasi/images/Umat8.jpg" href="<?php echo base_url() ?>">
                   <div class="logo">
                     <a href="<?php echo base_url() ?>">Halal Ummat<span>*</span></a>
 										</div>
@@ -56,6 +57,7 @@
                         <li><a href="<?php echo base_url('tentang_kami') ?>">Tentang Kami</a></li>
                         <li><a href="<?php echo base_url('berita') ?>">Berita</a></li>
                         <li><a href="<?php echo base_url('kontak') ?>">Kontak</a></li>
+                        <li><a href="<?php echo base_url('daftar') ?>">Daftar</a></li>
                       </ul>
                     </nav>
                     <div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
@@ -82,7 +84,7 @@
         <div class="home_content">
           <div class="home_title">Medical Services that you can trust</div>
           <div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</div>
-          <div class="button home_button"><a href="#"><span>Daftar</span><span>Daftar</span></a></div>
+          <div class="button home_button"><a href="<?php echo base_url('daftar') ?>"><span>Daftar</span><span>Daftar</span></a></div>
         </div>
       </div>
     </div>
@@ -170,7 +172,7 @@
       <div class="col-xl-4 col-lg-6">
         <div class="icon_box">
           <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon_1.svg" alt=""></div>
+            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon(1).png" alt=""></div>
             <div class="icon_box_title">Kelebihan 1</div>
           </div>
           <div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
@@ -181,7 +183,7 @@
       <div class="col-xl-4 col-lg-6">
         <div class="icon_box">
           <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon_2.svg" alt=""></div>
+            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon(2).png" alt=""></div>
             <div class="icon_box_title">Kelebihan 2</div>
           </div>
           <div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
@@ -192,7 +194,7 @@
       <div class="col-xl-4 col-lg-6">
         <div class="icon_box">
           <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon_3.svg" alt=""></div>
+            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon(3).png" alt=""></div>
             <div class="icon_box_title">Kelebihan 3</div>
           </div>
           <div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
@@ -203,7 +205,7 @@
       <div class="col-xl-4 col-lg-6">
         <div class="icon_box">
           <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon_4.svg" alt=""></div>
+            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon(4).png" alt=""></div>
             <div class="icon_box_title">Kelebihan 4</div>
           </div>
           <div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
@@ -214,7 +216,7 @@
       <div class="col-xl-4 col-lg-6">
         <div class="icon_box">
           <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon_5.svg" alt=""></div>
+            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon(5).png" alt=""></div>
             <div class="icon_box_title">Kelebihan 5</div>
           </div>
           <div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
@@ -225,7 +227,7 @@
       <div class="col-xl-4 col-lg-6">
         <div class="icon_box">
           <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
-            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon_6.svg" alt=""></div>
+            <div class="icon_box_icon"><img src="<?php echo base_url() ?>assets/koperasi/images/icon(6).png" alt=""></div>
             <div class="icon_box_title">Kelebihan 6</div>
           </div>
           <div class="icon_box_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem maximus malesuada lorem maximus mauris.</div>
@@ -317,7 +319,7 @@
 <!-- Footer -->
 
 	<footer class="footer">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>assets/koperasi/images/footer.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>assets/koperasi/images/Grey.jpg" data-speed="0.8"></div>
 		<div class="footer_content">
 			<div class="container">
 				<div class="row">
@@ -344,21 +346,7 @@
 					</div>
 
 					<!-- Footer Contact -->
-					<div class="col-lg-5 footer_col">
-						<div class="footer_contact">
-							<div class="footer_contact_title">Kontak Cepat</div>
-							<div class="footer_contact_form_container">
-								<form action="#" class="footer_contact_form" id="footer_contact_form">
-									<div class="d-flex flex-xl-row flex-column align-items-center justify-content-between">
-										<input type="text" class="footer_contact_input" placeholder="Nama" required="required">
-										<input type="email" class="footer_contact_input" placeholder="E-mail" required="required">
-									</div>
-									<textarea class="footer_contact_input footer_contact_textarea" placeholder="Pesan" required="required"></textarea>
-									<button class="footer_contact_button">kirim pesan</button>
-								</form>
-							</div>
-						</div>
-					</div>
+					<div class="col-lg-5 footer_col"></div>
 
 					<!-- Footer Hours -->
 					<div class="col-lg-4 footer_col">
