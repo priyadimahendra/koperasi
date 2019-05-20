@@ -22,7 +22,7 @@
 <!-- Home -->
 
 <div class="home">
-  <div class="background_image" style="background-image:url(<?php echo base_url() ?>assets/koperasi/images/beranda.jpg)"></div>
+  <div class="background_image" style="background-image:url(<?php echo base_url() ?>assets/koperasi/images/beranda11.jpeg)"></div>
 
   <!-- Header -->
 
@@ -34,6 +34,7 @@
             <div class="col">
               <div class="header_top_content d-flex flex-row align-items-center justify-content-start">
                 <img src="<?php echo base_url() ?>assets/koperasi/images/Umat8.jpg" href="<?php echo base_url() ?>">
+                <pre>  </pre>
                   <div class="logo">
                     <a href="<?php echo base_url() ?>">Halal Ummat<span>*</span></a>
 										</div>
@@ -82,7 +83,7 @@
     <div class="row">
       <div class="col">
         <div class="home_content">
-          <div class="home_title">Medical Services that you can trust</div>
+          <div class="home_title">Visi Misi Koperasi Halal Umat</div>
           <div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</div>
           <div class="button home_button"><a href="<?php echo base_url('daftar') ?>"><span>Daftar</span><span>Daftar</span></a></div>
         </div>
@@ -101,7 +102,7 @@
       <!-- Info Box -->
       <div class="col-lg-4 info_box_col">
         <div class="info_box">
-          <div class="info_image"><img src="<?php echo base_url() ?>assets/koperasi/images/info_1.jpg" alt=""></div>
+          <div class="info_image"><img src="<?php echo base_url() ?>assets/koperasi/images/news_1.jpg" alt=""></div>
           <div class="info_content">
             <div class="info_title">Free Consultations</div>
             <div class="info_text">Arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas finibus, dolor risus mollis.</div>
@@ -377,7 +378,6 @@
           <div class="col">
          <div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<?php echo date('Y') ?>. All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
          </div>
        </div>
        </div>

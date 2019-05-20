@@ -19,7 +19,7 @@
 <!-- Home -->
 
 <div class="home">
-  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>assets/koperasi/images/contact.jpg" data-speed="0.8"></div>
+  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>assets/koperasi/images/kontak1.jpeg" data-speed="0.8"></div>
 
   <!-- Header -->
 
@@ -31,6 +31,7 @@
             <div class="col">
               <div class="header_top_content d-flex flex-row align-items-center justify-content-start">
                 <img src="<?php echo base_url() ?>assets/koperasi/images/Umat8.jpg" href="<?php echo base_url() ?>">
+                <pre>  </pre>
                 <div class="logo">
                   <a href="<?php echo base_url() ?>">Halal Ummat<span>*</span></a>
                 </div>
@@ -99,8 +100,8 @@
           <div class="contact_title">Kontak</div>
           <div class="contact_form_container">
             <form action="#" id="contact_form" class="contact_form">
-              <input type="text" id="contact_input" class="contact_input" placeholder="Namamu" required="required">
-              <input type="email" id="contact_email" class="contact_input" placeholder="E-mailmu" required="required">
+              <input type="text" id="contact_input" class="contact_input" placeholder="Nama" required="required">
+              <input type="email" id="contact_email" class="contact_input" placeholder="E-mail" required="required">
               <input type="text" id="contact_subject" class="contact_input" placeholder="Subject" required="required">
               <textarea class="contact_input contact_textarea" id="contact_textarea" placeholder="Pesan" required="required"></textarea>
               <button class="contact_button" id="contact_button">kirim pesan</button>
@@ -108,58 +109,10 @@
           </div>
         </div>
       </div>
-      <!-- contact info -->
-				<div class="contact_info">
-					<div class="row">
-						<div class="col-lg-3 offset-lg-1">
-							<div class="contact_info_list">
-								<div class="contact_info_title">Kontak Info</div>
-								<ul>
-									<li><span>Alamat: </span>Mitlton Str. 26-27 Gibraltar</li>
-									<li><span>Email: </span>yourmail@gmail.com</li>
-									<li><span>Telepon: </span>+53 345 7953 32453</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="contact_info_list contact_info_list_2">
-							</div>
-						</div>
-						<div class="col-lg-3">
-							<div class="contact_info_list">
-								<div class="contact_info_title">Jam Kerja</div>
-								<ul>
-                  <li class="d-flex flex-row align-items-center justify-content-start">
-  									<div>Senin – Kamis</div>
-  									<div class="ml-auto">9.00 – 16.00</div>
-  								</li>
-  								<li class="d-flex flex-row align-items-center justify-content-start">
-  									<div>Jumat</div>
-  									<div class="ml-auto">12.00 - 16.00</div>
-  								</li>
-  								<li class="d-flex flex-row align-items-center justify-content-start">
-  									<div>Sabtu - Minggu</div>
-  									<div class="ml-auto">Libur</div>
-  								</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
     </div>
   </div>
 </div>
 
-<div class="contact_map">
-  <!-- Google Map -->
-  <div class="map">
-    <div id="google_map" class="google_map">
-      <div class="map_container">
-        <div id="map"></div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -224,7 +177,6 @@
             <div class="col">
            <div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<?php echo date('Y') ?>. All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
            </div>
          </div>
          </div>
@@ -238,7 +190,6 @@
   <script src="<?php echo base_url() ?>assets/koperasi/styles/bootstrap4/bootstrap.min.js"></script>
   <script src="<?php echo base_url() ?>assets/koperasi/plugins/easing/easing.js"></script>
   <script src="<?php echo base_url() ?>assets/koperasi/plugins/parallax-js-master/parallax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
   <script src="<?php echo base_url() ?>assets/koperasi/js/contact.js"></script>
 
   </body>

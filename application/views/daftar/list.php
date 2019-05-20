@@ -31,6 +31,7 @@
             <div class="col">
               <div class="header_top_content d-flex flex-row align-items-center justify-content-start">
                 <img src="<?php echo base_url() ?>assets/koperasi/images/Umat8.jpg" href="<?php echo base_url() ?>">
+                <pre>  </pre>
                 <div class="logo">
                   <a href="<?php echo base_url() ?>">Halal Ummat<span>*</span></a>
                 </div>
@@ -401,7 +402,6 @@ echo form_close();
             <div class="col">
            <div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<?php echo date('Y') ?>. All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
            </div>
          </div>
          </div>
