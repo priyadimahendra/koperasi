@@ -36,7 +36,6 @@ class Login extends CI_Controller {
 					{
 						$this->session->set_userdata('id_user', $check_login->$id_user);
 						$this->session->set_userdata('username',$username);
-						$this->session->set_userdata('password',$password);
 						$this->session->set_flashdata('sukses', 'Anda berhasil login');
 						redirect(base_url('admin/dasbor'),'refresh');
 					}else {
@@ -47,7 +46,7 @@ class Login extends CI_Controller {
 	}
 
 	public function logout() {
-		$this->session->set_userdata('id_user');
+		$this->session->unset_userdata('id_user');
 		$this->session->unset_userdata('username');
 		$this->session->unset_userdata('password');
 		$this->session->set_flashdata('sukses', 'Anda berhasil logout');
