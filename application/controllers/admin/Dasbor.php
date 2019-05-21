@@ -9,4 +9,3 @@ class Dasbor extends CI_Controller {
     $this->load->view('admin/layout/wrapper', $data, FALSE);
   }
 }
-?>
