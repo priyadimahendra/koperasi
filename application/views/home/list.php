@@ -22,7 +22,7 @@
 <!-- Home -->
 
 <div class="home">
-  <div class="background_image" style="background-image:url(<?php echo base_url() ?>assets/koperasi/images/beranda11.jpeg)"></div>
+  <div class="background_image" style="background-image:url(<?php echo base_url() ?>assets/koperasi/images/awal2.jpeg)"></div>
 
   <!-- Header -->
 
@@ -61,12 +61,7 @@
                         <li><a href="<?php echo base_url('daftar') ?>">Daftar</a></li>
                       </ul>
                     </nav>
-                    <div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
-                      <form action="#" id="search_container_form" class="search_container_form">
-                        <input type="text" class="search_container_input" placeholder="Pencaharian" required="required">
-                        <button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                      </form>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -99,41 +94,20 @@
   <div class="container">
     <div class="row row-eq-height">
 
+      <?php $i=1; foreach ($berita as $berita) { ?>
       <!-- Info Box -->
       <div class="col-lg-4 info_box_col">
         <div class="info_box">
-          <div class="info_image"><img src="<?php echo base_url() ?>assets/koperasi/images/news_1.jpg" alt=""></div>
+          <div class="info_image"><img src="<?php echo base_url('assets/upload/image/'.$berita->gambar) ?>" alt=""></div>
           <div class="info_content">
-            <div class="info_title">Free Consultations</div>
-            <div class="info_text">Arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas finibus, dolor risus mollis.</div>
-            <div class="button info_button"><a href="#"><span>baca lebih</span><span>baca lebih</span></a></div>
+            <div class="info_title"><?php echo $berita->judul_berita ?></div>
+            <div class="info_text"><?php echo character_limiter($berita->isi_berita,200) ?></div>
+            <div class="button info_button"><a href="<?php echo base_url('berita/read') ?>"><span>baca lebih</span><span>baca lebih</span></a></div>
           </div>
         </div>
       </div>
 
-      <!-- Info Box -->
-      <div class="col-lg-4 info_box_col">
-        <div class="info_box">
-          <div class="info_image"><img src="<?php echo base_url() ?>assets/koperasi/images/info_2.jpg" alt=""></div>
-          <div class="info_content">
-            <div class="info_title">Emergency Care</div>
-            <div class="info_text">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas finibus, dolor risus.</div>
-            <div class="button info_button"><a href="#"><span>baca lebih</span><span>baca lebih</span></a></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Info Box -->
-      <div class="col-lg-4 info_box_col">
-        <div class="info_box">
-          <div class="info_image"><img src="<?php echo base_url() ?>assets/koperasi/images/info_2.jpg" alt=""></div>
-          <div class="info_content">
-            <div class="info_title">Emergency Care</div>
-            <div class="info_text">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas finibus, dolor risus.</div>
-            <div class="button info_button"><a href="#"><span>baca lebih</span><span>baca lebih</span></a></div>
-          </div>
-        </div>
-      </div>
+      <?php $i++; } ?>
 
     </div>
   </div>
@@ -331,17 +305,7 @@
 							<div class="logo">
 								<a href="#">halal ummat<span>*</span></a>
 							</div>
-							<div class="footer_about_text">Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris.</div>
-							<div class="footer_social">
-								<ul class="d-flex flex-row align-items-center justify-content-start">
-									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
+							<div class="footer_about_text">Koperasi yang berada dibawah pengawasan lembaga Majelis Ulama Indonesia. Koperasi yang bertujuan untuk memakmurkan umat islam.</div>
 
 						</div>
 					</div>

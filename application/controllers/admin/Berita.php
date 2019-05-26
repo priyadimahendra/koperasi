@@ -7,6 +7,7 @@ class Berita extends CI_Controller
   {
     parent::__construct();
     $this->load->model('berita_model');
+    $this->load->model('user_model');
   }
 
   //listing data berita
@@ -33,7 +34,7 @@ class Berita extends CI_Controller
 
     if($valid->run())
     {
-      $config['upload_path']          = '.assets/upload/image/';
+      $config['upload_path']          = './assets/upload/image/';
       $config['allowed_types']        = 'gif|jpg|png|jpeg';
       $config['max_size']             = 5000; //dalam kilobyte
       $config['max_width']            = 5000; //dalam piksel
@@ -44,7 +45,7 @@ class Berita extends CI_Controller
       if ( ! $this->upload->do_upload('gambar'))
       {
         $data = array(    'title'         =>    'Tambah Berita',
-                          '$error_upload' =>    $this->upload->display_errors(),
+                          'error_upload' =>    $this->upload->display_errors(),
                           'isi'           =>    'admin/berita/tambah');
         $this->load->view('admin/layout/wrapper', $data, FALSE);
       }else{
@@ -55,18 +56,19 @@ class Berita extends CI_Controller
         $config['image_library']  = 'gd2';
         $config['source_image']   = './assets/upload/image/'.$upload_data['uploads']['file_name'];
         //gambar versi kecil dipindahkan
-        $config['new_image']   = './assets/upload/image/thumbs'.$upload_data['uploads']['file_name'];
+        $config['new_image']   = './assets/upload/image/thumbs/'.$upload_data['uploads']['file_name'];
         $config['create_thumb']   = TRUE;
         $config['maintain_ratio'] = TRUE;
         $config['width']          = 200;
         $config['height']         = 200;
+        $config['thumb_marker']   = '';
 
         $this->load->library('image_lib', $config);
 
         $this->image_lib->resize();
 
         $i = $this->input;
-        $data = array(  'id_user'       =>  $this->session->userdata('id_user'),
+        $data = array(
                         'judul_berita'  =>  $i->post('judul_berita'),
                         'isi_berita'    =>  $i->post('isi_berita'),
                         'gambar'        =>  $upload_data['uploads']['file_name'],

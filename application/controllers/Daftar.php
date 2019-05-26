@@ -12,4 +12,8 @@ class Daftar extends CI_Controller{
     $data = array(  'title'   =>    'Pendaftaran');
     $this->load->view('daftar/list',$data,FALSE);
   }
+
+  public function lakukan_download(){
+		force_download('assets/file/Formulir',NULL);
+	}
 }

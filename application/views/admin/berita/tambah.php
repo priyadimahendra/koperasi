@@ -11,14 +11,13 @@ if(isset($error_upload))
 //Atribut
 $attribut = 'class = "alert alert-info"';
 // Form Open Khusus bila diform ada uploda gambar
-echo form_open_multipart(base_url('admin/berita/tambah'));
+echo form_open_multipart(base_url('admin/berita/tambah'),$attribut);
  ?>
 
 <div class="col-md-8">
   <div class="form-group form-group-lg">
       <label>Judul Berita</label>
-      <input type="text" name="judul_berita" class="form-control" placeholder="Judul berita" value="<?php echo set_value('judul
-      ') ?>" required>
+      <input type="text" name="judul_berita" class="form-control" placeholder="Judul berita" value="<?php echo set_value('judul') ?>" required>
   </div>
 </div>
 

@@ -61,12 +61,7 @@
                         <li><a href="<?php echo base_url('daftar') ?>">Daftar</a></li>
                       </ul>
                     </nav>
-                    <div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
-                      <form action="#" id="search_container_form" class="search_container_form">
-                        <input type="text" class="search_container_input" placeholder="Pencaharian" required="required">
-                        <button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                      </form>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -160,7 +155,7 @@
 				<!-- Doctor -->
 				<div class="col-xl-3 col-md-6">
 					<div class="doctor">
-						<div class="doctor_image"><img src="<?php echo base_url() ?>assets/koperasi/images/doc_6.jpg" alt=""></div>
+						<div class="doctor_image"><img src="<?php echo base_url() ?>assets/koperasi/images/farhan2.jpg" alt=""></div>
 						<div class="doctor_content">
 							<div class="doctor_name"><a>Christina Smith</a></div>
 							<div class="doctor_title">Laboratory</div>
@@ -171,7 +166,7 @@
 				<!-- Doctor -->
 				<div class="col-xl-3 col-md-6">
 					<div class="doctor">
-						<div class="doctor_image"><img src="<?php echo base_url() ?>assets/koperasi/images/doc_7.jpg" alt=""></div>
+						<div class="doctor_image"><img src="<?php echo base_url() ?>assets/koperasi/images/roza2.jpg" alt=""></div>
 						<div class="doctor_content">
 							<div class="doctor_name"><a>Jessica Walsh</a></div>
 							<div class="doctor_title">Pediatrist</div>
@@ -182,7 +177,7 @@
 				<!-- Doctor -->
 				<div class="col-xl-3 col-md-6">
 					<div class="doctor">
-						<div class="doctor_image"><img src="<?php echo base_url() ?>assets/koperasi/images/doc_8.jpg" alt=""></div>
+						<div class="doctor_image"><img src="<?php echo base_url() ?>assets/koperasi/images/ardiyas.jpg" alt=""></div>
 						<div class="doctor_content">
 							<div class="doctor_name"><a>Martha James</a></div>
 							<div class="doctor_title">Eye Doctor</div>
@@ -209,17 +204,7 @@
   							<div class="logo">
   								<a href="#">halal ummat<span>*</span></a>
   							</div>
-  							<div class="footer_about_text">Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris.</div>
-  							<div class="footer_social">
-  								<ul class="d-flex flex-row align-items-center justify-content-start">
-  									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-  								</ul>
-  							</div>
+  							<div class="footer_about_text">Koperasi yang berada dibawah pengawasan lembaga Majelis Ulama Indonesia. Koperasi yang bertujuan untuk memakmurkan umat islam.</div>
 
   						</div>
   					</div>

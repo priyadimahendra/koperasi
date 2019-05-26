@@ -103,6 +103,13 @@ echo form_open(base_url('admin/pendaftar/tambah'));
   </div>
 </div>
 
+<div class="col-md-12">
+  <div class="form-group form-group-lg">
+      <label>Alamat</label>
+      <input type="text" name="alamat" class="form-control" placeholder="Alamat" value="<?php echo set_value('alamat') ?>" required>
+  </div>
+</div>
+
 <div class="col-md-4">
   <div class="form-group">
       <label>Kelurahan/Desa</label>
@@ -134,7 +141,7 @@ echo form_open(base_url('admin/pendaftar/tambah'));
 <div class="col-md-12">
   <div class="form-group form-group-lg">
       <label>Pendidikan Terakhir</label>
-      <input type="text" name="pendidikan_terkahir" class="form-control" placeholder="Pendidikan Terakhir" value="<?php echo set_value('pendidikan_terkahir') ?>" required>
+      <input type="text" name="pendidikan_terakhir" class="form-control" placeholder="Pendidikan Terakhir" value="<?php echo set_value('pendidikan_terkahir') ?>" required>
   </div>
 </div>
 

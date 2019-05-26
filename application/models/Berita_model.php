@@ -14,9 +14,31 @@ class Berita_model extends CI_Model
   {
     $this->db->select('*');
     $this->db->from('berita');
-    $this->db->order_by('id_berita');
+
+    $this->db->order_by('id_berita','DESC');
     $query = $this->db->get();
     return $query->result();
+  }
+
+  public function home()
+  {
+    $this->db->select('*');
+    $this->db->from('berita');
+
+    $this->db->order_by('id_berita','DESC');
+    $this->db->limit(3);
+    $query = $this->db->get();
+    return $query->result();
+  }
+
+  public function detail($id_berita)
+  {
+    $this->db->select('*');
+    $this->db->from('berita');
+    $this->db->where('id_berita',$id_berita);
+    $this->db->order_by('id_berita','DESC');
+    $query  = $this->db->get();
+    return $query->row();
   }
 
   // Tambah/Insert data

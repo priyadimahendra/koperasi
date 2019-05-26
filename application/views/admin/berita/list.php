@@ -30,11 +30,16 @@ if($this->session->flashdata('sukses'))
     <?php $i=1; foreach($berita as $berita) { ?>
      <tr class="odd gradeX">
          <td><?php echo $i ?></td>
-         <td><img src="<?php echo base_url('assets/koperasi/images/'.$berita->gambar) ?>" width="60" class="img img-thumbnail"></td>
+         <td><img src="<?php echo base_url('assets/upload/image/thumbs/'.$berita->gambar) ?>" width="60" class="img img-thumbnail"></td>
          <td><?php echo $berita->judul_berita ?></td>
-         <td class="center"><?php echo $berita->nama ?></td>
+         <td class="center">Admin</td>
          <td class="center"><?php echo $berita->tanggal_post ?></td>
-         <td class="center">X</td>
+         <td class="center">
+           <a href="<?php echo base_url('admin/berita/edit/'.$berita->id_berita) ?>" class="btn btn-warning btn-xs">
+                                    <i class="fa fa-edit"></i>Edit</a>
+
+           <?php include('delete.php') ?>
+         </td>
      </tr>
     <?php $i++; } ?>
 

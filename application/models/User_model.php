@@ -9,6 +9,17 @@ class User_model extends CI_Model
     $this->load->database();
   }
 
+  //tambah pendaftaar
+  public function index ($data) {
+		$this->db->insert('pendaftar',$data);
+	}
+
+  //edit pendaftar
+  public function edit($data){
+    $this->db->where('id_pendaftar',$data['id_pendaftar']);
+    $this->db->update('pendaftar',$data);
+  }
+
   public function detail($id_user)
   {
     $this->db->select('*');

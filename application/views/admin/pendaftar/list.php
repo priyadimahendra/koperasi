@@ -42,7 +42,12 @@ if($this->session->flashdata('sukses'))
          <td class="center"><?php echo $pendaftar->pendidikan_terakhir ?></td>
          <td class="center"><?php echo $pendaftar->no_hp ?>/<?php echo $pendaftar->no_wa ?></td>
          <td class="center"><?php echo $pendaftar->email ?></td>
-         <td class="center">X</td>
+         <td class="center">
+           <a href="<?php echo base_url('admin/pendaftar/edit/'.$pendaftar->id_pendaftar) ?>" class="btn btn-warning btn-xs">
+                                    <i class="fa fa-edit"></i>Edit</a>
+
+           <?php include('delete.php') ?>
+         </td>
      </tr>
     <?php $i++; } ?>
 

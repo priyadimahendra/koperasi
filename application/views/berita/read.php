@@ -95,48 +95,26 @@
 				<div class="col-lg-8">
 					<div class="news_posts">
 
-            <?php $i=1; foreach ($berita as $berita) { ?>
 						<!-- News Post -->
 						<div class="news_post">
-							<div class="news_post_image"><img src="<?php echo base_url('assets/upload/image/'.$berita->gambar) ?>" alt=""></div>
+              <div class="news_post_content">
+                  <div class="news_post_title"><a><?php echo $berita->judul_berita ?></a></div><br>
+
+              </div>
+              <div class="news_post_image"><img src="<?php echo base_url('assets/upload/image/'.$berita->gambar) ?>" alt=""></div>
 							<div class="news_post_content">
 								<div class="news_post_date"><a href=""><?php echo $berita->tanggal_post ?></a></div>
-								<div class="news_post_title"><a href="#"><?php echo $berita->judul_berita ?></a></div>
 								<div class="news_post_text">
-                    <?php echo character_limiter($berita->isi_berita,200) ?>
+                    <?php echo $berita->isi_berita ?>
                 </div>
-								<div class="button news_post_button"><a href="<?php echo base_url('berita/read/'.$berita->id_berita) ?>"><span>baca lebih</span><span>baca lebih</span></a></div>
 							</div>
 						</div>
 
-            <?php $i++; } ?>
 
 					</div>
 				</div>
 
-        <!-- Sidebar -->
-<div class="col-lg-4">
-  <div class="news_sidebar">
 
-    <!-- Latest News -->
-    <div class="sidebar_latest">
-      <div class="sidebar_title">Berita Terbaru</div>
-      <div class="sidebar_latest_container">
-
-        <?php $i=1; foreach ($berita2 as $berita2) { ?>
-        <!-- Latest News Post -->
-        <div class="latest d-flex flex-row align-items-start justify-content-start">
-          <div><div class="latest_image"><img src="<?php echo base_url('assets/upload/image/'.$berita2->gambar)?>" alt=""></div></div>
-          <div class="latest_content">
-            <div class="latest_title"><a href="news.html"><?php echo $berita2->judul_berita ?></a></div>
-          </div>
-        </div>
-        <?php $i++; } ?>
-
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 </div>
 </div>

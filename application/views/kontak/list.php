@@ -58,12 +58,7 @@
                         <li><a href="<?php echo base_url('daftar') ?>">Daftar</a></li>
                       </ul>
                     </nav>
-                    <div class="search_content d-flex flex-row align-items-center justify-content-end ml-auto">
-                      <form action="#" id="search_container_form" class="search_container_form">
-                        <input type="text" class="search_container_input" placeholder="Pencaharian" required="required">
-                        <button class="search_container_button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                      </form>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -94,25 +89,40 @@
   <div class="container">
     <div class="row">
 
-      <!-- Contact form -->
-      <div class="col-lg-8 contact_col">
-        <div class="contact_form">
-          <div class="contact_title">Kontak</div>
-          <div class="contact_form_container">
-            <form action="#" id="contact_form" class="contact_form">
-              <input type="text" id="contact_input" class="contact_input" placeholder="Nama" required="required">
-              <input type="email" id="contact_email" class="contact_input" placeholder="E-mail" required="required">
-              <input type="text" id="contact_subject" class="contact_input" placeholder="Subject" required="required">
-              <textarea class="contact_input contact_textarea" id="contact_textarea" placeholder="Pesan" required="required"></textarea>
-              <button class="contact_button" id="contact_button">kirim pesan</button>
-            </form>
-          </div>
-        </div>
-      </div>
+
+
+      <!-- contact info -->
+				<div class="contact_info">
+					<div class="row">
+						<div class="col-lg-3 offset-lg-1">
+							<div class="contact_info_list">
+								<div class="contact_info_title">Contact Info</div>
+								<ul>
+									<li><span>Address: </span>Mitlton Str. 26-27 Gibraltar</li>
+									<li><span>Email: </span>yourmail@gmail.com</li>
+									<li><span>Phone: </span>+53 345 7953 32453</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="contact_info_list contact_info_list_2">
+								<ul>
+									<li><span>Address: </span>Mitlton Str. 26-27 London UK</li>
+									<li><span>Email: </span>yourmail@gmail.com</li>
+									<li><span>Phone: </span>+53 345 7953 32453</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
     </div>
   </div>
 </div>
 
+<div class="contact_map">
+  <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="<?php echo base_url() ?>assets/koperasi/images/map.jpg" data-speed="0.8"></div>
+</div>
 
 
 
@@ -130,17 +140,7 @@
   							<div class="logo">
   								<a href="#">halal ummat<span>*</span></a>
   							</div>
-  							<div class="footer_about_text">Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris.</div>
-  							<div class="footer_social">
-  								<ul class="d-flex flex-row align-items-center justify-content-start">
-  									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-  									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-  								</ul>
-  							</div>
+  							<div class="footer_about_text">Koperasi yang berada dibawah pengawasan lembaga Majelis Ulama Indonesia. Koperasi yang bertujuan untuk memakmurkan umat islam.</div>
 
   						</div>
   					</div>
