@@ -24,9 +24,9 @@ class Dasbor extends CI_Controller {
   }
 
   public function delete($id_pendaftar){
-  $data = array('id_pendaftar'   =>    $id_pendaftar);
-  $this->dasbor_model->delete($data);
-  $this->session->set_flashdata( 'sukses', 'Data telah dihapus');
-  redirect(base_url('admin/dasbor'),'refresh');
-}
+    $data = array('id_pendaftar'   =>    $id_pendaftar);
+    $this->dasbor_model->delete($data);
+    $this->session->set_flashdata( 'sukses', 'Data telah dihapus');
+    redirect(base_url('admin/dasbor'),'refresh');
+  }
 }
