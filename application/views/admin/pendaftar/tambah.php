@@ -167,7 +167,7 @@ echo form_open(base_url('admin/pendaftar/tambah'));
 
   <div class="form-group text-right">
       <button type="submit" name="submit" class="btn btn-success btn-lg">
-        <i class="fa fa-save"></i> Simpan Berita
+        <i class="fa fa-save"></i> Simpan Pendaftar
       </button>
       <button type="reset" name="reset" class="btn btn-default btn-lg">
         <i class="fa fa-times"></i> Reset
